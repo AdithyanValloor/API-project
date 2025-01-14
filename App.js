@@ -27,7 +27,7 @@ app.get('/books/:id', (req, res) => {
         const product = productList.find(prod => prod.id === productId)
 
         if(!product){
-            res.status(404).json({message:"Product not found"})
+            res.status(404).json({message:"Book not found"})
         }
 
         res.status(200).send(product)
