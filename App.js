@@ -12,13 +12,13 @@ app.get('/', (req, res) => {
 
 })
 
-app.get('/products',(req, res) => {
+app.get('/books',(req, res) => {
     
     res.status(200).send(productList)
     
 })
 
-app.get('/products/:id', (req, res) => {
+app.get('/books/:id', (req, res) => {
 
     try {
         
